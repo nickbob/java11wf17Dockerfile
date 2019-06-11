@@ -1,0 +1,5 @@
+docker build -t java11wf17 .
+
+docker run -d -it --rm -p 8080:8080 -p 9990:9990 java11wf17
+
+docker exec -it $(docker ps -q) bash
